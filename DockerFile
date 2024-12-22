@@ -1,0 +1,5 @@
+FROM openjdk:8-jdk-alpine
+WORKDIR /app
+COPY PrintOddNumbers.java .
+RUN javac PrintOddNumbers.java
+CMD ["java", "PrintOddNumbers"]
